@@ -330,9 +330,6 @@ function Customercare() {
                         </Card>
                     </Col>
                 </Row>
-
-
-
             </Container>
 
         </>
