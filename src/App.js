@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './Layout/Header/Header';
+import Footer from './Logo/Footer/Footer';
+
+
+import Loadable from './Loadable';
+import Demo from './Demo';
+import './App.css'
+const Hightlight = Loadable(lazy(() => import('./Components/Hightlight/Hightlight')));
+const Pants = Loadable(lazy(() => import('./search compo/Pants/Pants')));
+const Shoes = Loadable(lazy(() => import('./search compo/Shoes/Shoes')));
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className='starting'>
+        {/* <Demo/> */}
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Hightlight />} />
+            <Route path="/pants" element={<Pants />} />
+            <Route path="/shoes" element={<Shoes />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </div>
+
+
+    </>
   );
 }
 

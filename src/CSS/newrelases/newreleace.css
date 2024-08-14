@@ -1,0 +1,121 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+.ptext {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.card-info {
+    top: 0;
+    right: 0;
+}
+
+.frontH {
+    color: #FFFFFF;
+    margin-top: -250px;
+}
+
+.backH {
+    margin-top: -400px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media (max-width: 767px) {
+    .frontH, .backH {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .backP {
+        padding: 1rem;
+    }
+}
+
+ */
+
+
+/* .card{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 40px auto;
+    background-color: skyblue;
+ }
+ .card-back{
+    background-color: teal;
+ } */
+
+.cardtext {
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-align: justify;
+    align-content: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px;
+}
+
+.fronttext{
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-align: justify;
+    align-content: center;
+    justify-content: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 130px;
+}
+
+
+
+
+
+
+
+
+
+.cardtextfront {
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-align: justify;
+    align-content: center;
+    justify-content: center;
+    margin-left: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .cardtextfront {
+        text-align: center;
+        text-align: justify;
+        align-content: center;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 120px;
+    }
+ 
+}
+
+/* @media only screen and (min-width: 768px) {
+    .cardtextfront {
+        text-align: center;
+        text-align: justify;
+        align-content: center;
+        justify-content: center;
+        margin-left: 30px;
+        padding-top: 120px;
+    }
+} */

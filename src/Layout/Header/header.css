@@ -1,0 +1,21 @@
+
+
+
+
+
+.search input {
+    width: 100%;
+   
+    font-size: 10px;
+}
+.search-top{
+    width: 80%;
+}
+
+
+.search-result div{
+    width: 125%;
+   padding: 10px;
+    padding-left: -10px;
+    color: black;
+}
