@@ -65,7 +65,7 @@ function Header() {
 
     return (
         <>
-            <Navbar bg="dark" fixed="top" data-bs-theme="dark">
+            <Navbar bg="dark" fixed="top" data-bs-theme="dark" >
                 <Container>
                     <Navbar.Brand>
                         <Image src={logo} roundedCircle height={'40px'} width={'40px'} className='ml-3' />
@@ -75,7 +75,7 @@ function Header() {
                     </Navbar.Brand>
                 </Container>
             </Navbar>
-
+            
             <Modal
                 keepMounted
                 open={open}

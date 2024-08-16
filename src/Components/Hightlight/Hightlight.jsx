@@ -34,8 +34,13 @@ import Newreleases from '../../Components/New Releases/Newreleases';
 import Fastion from '../../Components/Fastion/Fastion';
 import Customercare from '../../Components/Customer care/Customercare';
 
-
-
+import sellimg from '../../images/Sell img/sell mobile img.png'
+import bestseller from '../../images/Sell img/bestsellerimg.png'
+import todaysdeal from '../../images/Sell img/todays best deals.png'
+import mobileimg from '../../images/Sell img/mobileimg.png'
+import newrelese from '../../images/Sell img/new releace.png'
+import fastionimg from '../../images/Sell img/fastionimg.png'
+import customerserice from '../../images/Sell img/customerservice.png'
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -128,7 +133,7 @@ function Hightlight() {
 
     return (
         <>
-            <Box width={'100%'} style={{ backgroundColor: 'white' }} className="mt-5 pt-3">
+            <Box width={'100%'} style={{ backgroundColor: 'white' }} className="mt-5 pt-2 d-none d-md-block">
                 <Box>
                     <Container className='mr-5'>
                         <Tabs
@@ -145,6 +150,28 @@ function Hightlight() {
                             <Tab icon={<MdOutlineNewReleases />} label="New Releases" {...a11yProps(4)} />
                             <Tab icon={<FaShirt />} label="Fashion" {...a11yProps(5)} />
                             <Tab icon={<RiCustomerService2Fill />} label="Customer Services" {...a11yProps(6)} />
+                        </Tabs>
+                    </Container>
+                </Box>
+            </Box>
+
+            <Box width={'100%'} style={{ backgroundColor: 'white'   }} className="pt-3 mt-5 d-block d-md-none">
+                <Box>
+                    <Container className='mr-5'>
+                        <Tabs
+                            value={value}
+                            onChange={handleChange}
+                            aria-label="basic tabs example"
+                            variant="scrollable"
+                            className="tabs-container"
+                        >
+                            <Tab icon={<img src={sellimg} alt="Sell" height={'80px'}/>} label="Sell" {...a11yProps(0)} />
+                            <Tab icon={<img src={bestseller} alt="Sell" height={'80px'}/>} label="Best Sellers" {...a11yProps(1)} />
+                            <Tab icon={<img src={todaysdeal} alt="Sell" height={'80px'}/>} label="Today's Deals" {...a11yProps(2)} />
+                            <Tab icon={<img src={mobileimg} alt="Sell" height={'80px'}/>} label="Mobile" {...a11yProps(3)} />
+                            <Tab icon={<img src={newrelese} alt="Sell" height={'80px'}/>} label="New Releases" {...a11yProps(4)} />
+                            <Tab icon={<img src={fastionimg} alt="Sell" height={'80px'}/>} label="Fashion" {...a11yProps(5)} />
+                            <Tab icon={<img src={customerserice} alt="Sell" height={'80px'}/>} label="Customer Services" {...a11yProps(6)} />
                         </Tabs>
                     </Container>
                 </Box>
@@ -170,6 +197,7 @@ function Hightlight() {
             <CustomTabPanel value={value} index={6}>
                 <Customercare />
             </CustomTabPanel>
+
             <h3 className='text-center fs-2' style={{ letterSpacing: '20px' }}>HIGHLIGHT</h3>
             <Container >
                 <Slider {...settings} >

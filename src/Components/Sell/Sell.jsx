@@ -86,7 +86,7 @@ function Sell() {
                         sellproduct.map((a) => {
                             return (
                                 <Col xl={3} lg={3} md={6} sm={12} xs={12} >
-                                    <Card className='mb-3 card-shadow '>
+                                    <Card className='mb-3 card-shadow'>
                                         <CardActionArea >
                                             <CardMedia
                                                 component="img"

@@ -197,6 +197,7 @@ import address from '../../images/customer services/address.png'
 import entainment from '../../images/customer services/entermainment.png'
 import paymentsetting from '../../images/customer services/payment (2).png'
 import account from '../../images/customer services/accountsetting.png'
+import digitalservice from '../../images/customer services/digital services.png'
 
 import { Col, Container, Row } from 'react-bootstrap';
 
@@ -324,6 +325,27 @@ function Customercare() {
                                     </Typography>
                                     <Typography variant="subtitle1" color="text.secondary" component="div">
                                         change email or passwaord, update login information
+                                    </Typography>
+                                </CardContent>
+                            </Box>
+                        </Card>
+                    </Col>
+                    <Col xl={4} lg={4} md={6} sm={12} xs={12}>
+                        <Card sx={{ display: 'flex' }} className='p-2 mb-3 customercard'>
+                            <CardMedia
+                                component="img"
+                                sx={{ width: 151, height: 130 }}
+                                image={digitalservice}
+                                alt="Live from space album cover"
+
+                            />
+                            <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                                <CardContent>
+                                    <Typography component="div" variant="h5">
+                                        Digital Services and Device Support
+                                    </Typography>
+                                    <Typography variant="subtitle1" color="text.secondary" component="div">
+                                        find device help and support troubleshoot device issues
                                     </Typography>
                                 </CardContent>
                             </Box>
