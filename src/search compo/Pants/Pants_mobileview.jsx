@@ -25,6 +25,14 @@ import pantimg10 from '../../images/Pants/pantimg10.png'
 
 import pantimg11 from '../../images/Pants/pantimg11.png'
 import pantimg12 from '../../images/Pants/pantimg12.png'
+import pantimg13 from '../../images/Pants/pantimg13.png'
+import pantimg14 from '../../images/Pants/pantimg14.png'
+import pantimg15 from '../../images/Pants/pantimg15.png'
+import pantimg16 from '../../images/Pants/pantimg16.png'
+import pantimg17 from '../../images/Pants/pantimg17.png'
+import pantimg18 from '../../images/Pants/pantimg18.png'
+import pantimg19 from '../../images/Pants/pantimg19.png'
+import pantimg20 from '../../images/Pants/pantimg20.png'
 
 import Rating from '@mui/material/Rating';
 
@@ -136,6 +144,62 @@ function Pants_mobileview() {
       pantimg: pantimg12,
       pant_name: "AVANOVA",
       pant_desc: "Men's Trouser II Men's Regular Casual Pants II Men's Regular Fit Casual Trouser (Trousers-120)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg13,
+      pant_name: "Amazon Brand",
+      pant_desc: "Men Casual Cotton Pants | Chinos | Trousers (Regular Fit)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg14,
+      pant_name: "JVX",
+      pant_desc: "JVX Men Trouser || Men Trouser Pants || Men Trouser Pants Cotton || Trouser for Men(Trouser)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg15,
+      pant_name: "Leriya Fashion",
+      pant_desc: "Baggy Cargo Pant trouser for Men",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg16,
+      pant_name: "Lymio",
+      pant_desc: "Lymio Men Cargo || Men Cargo Pants || Men Cargo Pants Cotton || Cargos for Men (Army)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg17,
+      pant_name: "Lymio",
+      pant_desc: "Lymio Men Jeans || Men Jeans Pants || Denim Jeans || Baggy Jeans for Men (Jeans-06-07-08)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg18,
+      pant_name: "TOPLOT",
+      pant_desc: "Men's Regular Casual Pants",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg19,
+      pant_name: "POSHAX",
+      pant_desc: "Men Trouser || Men's Regular Trouser || Men's Regular Fit Casual Trouser (Trouser-09-11)",
+      precision_rating: 4,
+      price: 1975
+    },
+    {
+      pantimg: pantimg20,
+      pant_name: "Peter England",
+      pant_desc: "Men's Solid Super Slim Fit Front Knit Trouser",
       precision_rating: 4,
       price: 1975
     }
