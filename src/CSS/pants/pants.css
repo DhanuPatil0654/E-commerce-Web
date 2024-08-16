@@ -1,0 +1,52 @@
+.customercard:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.customercard_mobileview:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.customercard {
+    width: 240px; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .customercard_mobileview {
+    width: 205px; 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .custom-card-content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+  
+  .custom-card-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .deals{
+    text-align: center;
+    color: white;
+    border: 1px solid ;
+    background-color: rgb(163, 87, 87);
+    padding: 3px;
+    
+  }
+
+  .limited-deal-chip {
+    background-color: rgb(149, 84, 84) !important;
+    color: white !important;
+    text-align: center;
+    width: 100%; /* This ensures the text is centered within the chip */
+  }
+  
