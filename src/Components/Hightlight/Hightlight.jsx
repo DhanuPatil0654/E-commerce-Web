@@ -155,9 +155,9 @@ function Hightlight() {
                             <Tab icon={<FaMobileAlt />} label="Mobile" {...a11yProps(3)} />
                             <Tab icon={<MdOutlineNewReleases />} label="New Releases" {...a11yProps(4)} />
                             <Tab icon={<FaShirt />} label="Fashion" {...a11yProps(5)} />
-                            <Tab icon={<FaIdCardClip />} label="Add To Card" {...a11yProps(6)} />
-                            <Tab icon={<FaHistory />} label="History" {...a11yProps(7)} />
-                            <Tab icon={<RiCustomerService2Fill />} label="Customer Services" {...a11yProps(8)} />
+                            {/* <Tab icon={<FaIdCardClip />} label="Add To Card" {...a11yProps(6)} />
+                            <Tab icon={<FaHistory />} label="History" {...a11yProps(7)} /> */}
+                            <Tab icon={<RiCustomerService2Fill />} label="Customer Services" {...a11yProps(6)} />
                         </Tabs>
                     </Container>
                 </Box>
@@ -179,9 +179,9 @@ function Hightlight() {
                             <Tab icon={<img src={mobileimg} alt="Sell" height={'80px'}/>} label="Mobile" {...a11yProps(3)} />
                             <Tab icon={<img src={newrelese} alt="Sell" height={'80px'}/>} label="New Releases" {...a11yProps(4)} />
                             <Tab icon={<img src={fastionimg} alt="Sell" height={'80px'}/>} label="Fashion" {...a11yProps(5)} />
-                            <Tab icon={<img src={fastionimg} alt="Sell" height={'80px'}/>} label="Add To Card" {...a11yProps(6)} />
-                            <Tab icon={<img src={addtocard} alt="Sell" height={'80px'}/>} label="History" {...a11yProps(7)} />
-                            <Tab icon={<img src={customerserice} alt="Sell" height={'80px'}/>} label="Customer Services" {...a11yProps(8)} />
+                            {/* <Tab icon={<img src={fastionimg} alt="Sell" height={'80px'}/>} label="Add To Card" {...a11yProps(6)} />
+                            <Tab icon={<img src={addtocard} alt="Sell" height={'80px'}/>} label="History" {...a11yProps(7)} /> */}
+                            <Tab icon={<img src={customerserice} alt="Sell" height={'80px'}/>} label="Customer Services" {...a11yProps(6)} />
                         </Tabs>
                     </Container>
                 </Box>
@@ -204,13 +204,13 @@ function Hightlight() {
             <CustomTabPanel value={value} index={5}>
                 <Fastion />
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={6}>
+            {/* <CustomTabPanel value={value} index={6}>
                View Details
             </CustomTabPanel>
             <CustomTabPanel value={value} index={7}>
                 <History/>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={8}>
+            </CustomTabPanel> */}
+            <CustomTabPanel value={value} index={6}>
                 <Customercare />
             </CustomTabPanel>
 

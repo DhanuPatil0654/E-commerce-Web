@@ -35,7 +35,7 @@ function Header() {
     const navigate = useNavigate(); // Initialize the useNavigate hook
 
     useEffect(() => {
-        axios.get("http://localhost:8000/getdata")
+        axios.get("http://localhost:5000/itemproduct_getdata")
             .then((res) => {
                 setFilterData(res.data.data);
                 setData([]);
@@ -49,15 +49,15 @@ function Header() {
             setData([]);
             setShowNoResults(false);
         } else {
-            const res = filterData.filter(f => f.name.toLowerCase().includes(value.toLowerCase()));
+            const res = filterData.filter(f => f.productname.toLowerCase().includes(value.toLowerCase()));
             setData(res);
             setShowNoResults(res.length === 0);
         }
     };
 
-    const handleSelect = (name) => {
+    const handleSelect = (productname) => {
         handleClose();
-        navigate(`/${name}`);
+        navigate(`/${productname}`);
     };
 
     return (
@@ -102,8 +102,8 @@ function Header() {
                                 </div>
                             ) : (
                                 data.map((a, i) => (
-                                    <div key={i} onClick={() => handleSelect(a.name)} className='p-2'>
-                                        {a.name}
+                                    <div key={i} onClick={() => handleSelect(a.productname)} className='p-2'>
+                                        {a.productname}
                                     </div>
                                 ))
                             )}
